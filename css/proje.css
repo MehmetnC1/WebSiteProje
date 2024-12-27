@@ -1,0 +1,242 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    position: sticky;
+    top: 0; 
+    z-index: 1000
+}
+
+.isimLogo h1 a{
+    color: white;
+    text-decoration: none;
+    transition: all 1.3s ease; 
+}
+
+header .isimLogo h1 {
+    font-size: 27px;
+    margin: 0;
+}
+
+.logoWeb{
+width: 40px;
+height: 40px;
+}
+
+.aramamotoru{
+    width: 300px;
+    height: 33px;
+    border-radius: 3px;
+    border:1px,solid;
+    margin-top: 28px;
+}
+
+.aramamotoru:hover{
+    transform:scale(1,1.1);
+}
+
+.liste {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 16px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+li a{
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.kategori{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.kategori a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.kategori a:hover{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .kategori{
+    display: block;
+}
+
+.üyelik a{
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+
+.reklamfoto img {
+    width: 100%;
+    height: 600px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav .Liste li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Linklerin altını kaldır */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Linklerin üzerine gelince altını çiz */
+}
+
+.ürünler{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+    margin-top: 40px;
+    background-color:ghostwhite;
+    padding: 100px;
+    margin-bottom:-20px;
+    margin-top: -20px;
+    border-radius: 6px;
+}
+
+.ürün {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 270px;
+    height: 270px;
+}
+
+.ürünler button{
+    display: inline-block;
+    padding: 10px 8px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 220px;
+    margin-left: 170px;
+}
+
+.ürün img { 
+    max-width: 100%; 
+    border-radius: 10px;
+}
+
+.altbölüm{
+    background-image:url(arkaplan2.jpg) ;
+    background-size: 30%;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.açıklama{
+    font-size: 20px;
+    color:white ;
+}
+
+.hakkında{
+    margin-bottom: 30px;
+}
+
+.destek{
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+
+    header{
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    header .Liste{
+        flex-direction: column; 
+        align-items: flex-start;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .Liste li {
+        padding: 4px;
+    }
+    
+    header .isimLogo h1{
+        font-size: 20px ;
+    }
+
+    .aramamotoru{
+        width: 200px;
+        margin: 10px 0;
+    }
+
+    .üyelik {
+        margin-left: 260px;
+        margin-top: -40px;
+    }
+
+    .reklamfoto img{
+        display: none;
+    }
+
+    .ürün{
+        align-items: flex-start;
+        display: flex; 
+    }
+        
+    .altbölüm{
+        width: 480px;
+        text-align: center;
+    }
+
+    .açıklama {
+        font-size: 10px;
+    }
+
+
+}

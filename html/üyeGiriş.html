@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üye Kayıt ve Giriş Sayfası</title>
+    <link rel="stylesheet" href="üyeGiriş.css">
+</head>
+<body>
+    <header>
+        <h1>Üye Giriş</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Üye Giriş</h2>
+            <form action="/login" method="post">
+                <label for="login-username">Kullanıcı Adı:</label>
+                <input type="text" id="login-username" name="username" required><br><br>
+
+                <label for="login-password">Şifre:</label>
+                <input type="password" id="login-password" name="password" required><br><br>
+
+                <input type="submit" value="Giriş Yap" class="girişyapma">
+            </form>
+            <p style="margin-left: 39%;">Eğer üye değilseniz kayıt olunuz.</p>
+            <a href="üyeKayıt.html"><input type="submit" value="Kayıt ol" class="üyekayıtbuton"></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Üye Kayıt ve Giriş. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
